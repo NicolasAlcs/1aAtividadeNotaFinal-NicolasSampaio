@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Pessoal</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+            background-color: rgb(233, 233, 233);
+            font-family: 'Segoe UI', sans-serif;
+        }
+        #wrapper {
+            padding-top: 100px;
+            width: 100%;
+            height: 100vh;
+        }
+        .content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          background-color: white; 
+          position: relative;
+          align-items: center;
+          border-radius: 12px;
+          box-shadow: 2px 0px 6px rgba(0,0,0,0.1);
+        }
+        .avatar {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(187, 187, 187);
+            border-radius: 999px;
+            border: 3px solid rgb(0, 168, 0);
+            position: absolute;
+            top: -90px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .title {
+            margin-top: 160px;
+            color: rgb(0, 168, 0);
+        }
+
+        .subtitle {
+            font-weight: normal;
+            margin-top: 0;
+            text-align: center;
+        }
+        .info {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .skills-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .skill {
+            padding: 8px 16px;
+            border-radius: 6px;
+            background-color: rgb(0, 168, 0);
+            color: white;
+            font-size: 16px;
+        }
+
+        .links {
+            display: flex;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(0, 168, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <div class="avatar">
+                <span>
+                    Sem Foto!
+                </span>
+            </div>
+
+            <h1 class="title">Nicolas Sampaio</h1>
+            <h3 class="subtitle">Sistemas de Informação <br>Nº 202403585944</h3>
+            <p class="info">
+                Olá, sou Nicolas Sampaio. Estou cursando o segundo período de Sistemas de Informação 
+                e tenho um grande interesse nas áreas de desenvolvimento backend e banco de dados. 
+                Meu objetivo é construir uma carreira em tecnologia, focando em desenvolvimento com a 
+                linguagem Java ou em gerenciamento e manipulação de dados utilizando MySQL.
+            </p>
+            <div class="skills-wrapper">
+                <span class="skill">
+                    HTML
+                </span>
+                <span class="skill">
+                    CSS
+                </span>
+                <span class="skill">
+                    JAVA
+                </span>
+                <span class="skill">
+                    MYSQL
+                </span>
+            </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/nicolas-sampaio-675391292/">LinkedIn</a>
+                <a href="https://github.com/NicolasAlcs">GitHub</a>
+                <a href="mailto:nn0042164@gmail.com">E-mail</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
