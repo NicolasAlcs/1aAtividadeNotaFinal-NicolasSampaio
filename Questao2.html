@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil Pessoal</title>
+        <link rel="stylesheet" href="Style.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: rgb(233, 233, 233);
+                font-family: 'Segoe UI', sans-serif;
+            }
+
+            .wrapper {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+            }
+
+            table {
+                align-self: center; /* esta alinha a tabela. Funciona em qualuqer elemento que esteja dentro de outro elemento com display flex*/
+                border-collapse: collapse; /* elimina as linhas padrões da tabela*/
+            }
+
+            table thead .table-header {
+                background-color: rgb(0, 168, 0);
+                color: white;
+                height: 60px;
+                text-align: left; 
+            }
+            
+            table thead tr th,
+            table tbody tr td {
+                padding: 8px;
+                border: 1px solid rgb(199, 199, 199);
+            }
+
+            table tbody .branco {
+                background-color: white;
+            }
+            
+            table tbody .cinza {
+                background-color: rgb(230, 230, 230);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <main class="wrapper">
+            <table>
+                <thead>
+                    <tr class="table-header">
+                        <th>Nome</th>
+                        <th style="width: 250px;">Descrição</th>
+                        <th>Categoria</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="branco">
+                        <td>ADATA SU650</td>
+                        <td>SSD 240GB 2.5 SATA 6GB/s  SSD SU650 </td>
+                        <td>SSD</td>
+                        <td>R$ 140.00</td>
+                    </tr>
+                    <tr class="cinza">
+                        <td>Logitech Mouse M185</td>
+                        <td>Mouse sem fio Logitech M185 com 5 metros de alcance</td>
+                        <td>Mouse</td>
+                        <td>R$ 100.00</td>
+                    </tr>
+                    <tr class="branco">
+                        <td>Logitech Teclado K270</td>
+                        <td>Teclado sem fio Logitech K270</td>
+                        <td>Teclado</td>
+                        <td>R$ 120.00</td>
+                    </tr>
+                    <tr class="cinza">
+                        <td>Voip Yealink T40P</td>
+                        <td>Voip Yealink SIP-T40P é um telefone SIP rico em recursos</td>
+                        <td>Telefone</td>
+                        <td>R$ 240.00</td>
+                    </tr>
+                    <tr class="branco">
+                        <td>Ramal Intelbras Pleno</td>
+                        <td>Ramal Intelbras Pleno dinamico </td>
+                        <td>Telefone</td>
+                        <td>R$ 80.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
