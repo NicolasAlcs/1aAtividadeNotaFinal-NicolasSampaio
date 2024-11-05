@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Contato</title>
+        <link rel="stylesheet" href="Style.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .form-container {
+                background-color: rgb(233, 233, 233);
+                padding-top: 100px;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .form-container .formulario {
+                width: 300px;
+                flex-direction: column;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                min-height: 100px;
+                gap: 16px;
+                padding: 36px 16px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 1px 1px 6px rgba( 0, 0, 0,0.125);
+            }
+
+            .form-container .formulario .titulo {
+                color: rgb(201, 10, 10);
+                text-align: center;
+                font-size: 22px;
+                margin: 8px 0;
+            }
+            
+            .form-container .formulario input,
+            .form-container .formulario button,
+            .form-container .formulario textarea {
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .form-container .formulario input,
+            .form-container .formulario button {
+                height: 36px;
+            }
+
+            .form-container .formulario input,
+            .form-container .formulario textarea {
+                border: 1px solid lightgrey;
+            }
+
+            .form-container .formulario button {
+                border: none;
+                color: white;
+                background-color: rgb(184, 145, 99);
+            }
+
+        </style>
+        <script>
+            function enviar() {
+                let email = document.getElementById("email").value;
+                if (email.includes('@')) {
+                    let nome = document.getElementById("nome").value;
+                    alert(`Usuário ${nome} logado com sucesso.`);
+                } else {
+                    alert("E-mail inválido!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <main class="form-container">
+            
+            <form class="formulario">
+                <h1 class="titulo">Formulário de Contato</h1>
+
+                <input placeholder="Nome" type="text" id="nome" name="nome" required>
+                <input placeholder="Email" type="email" id="email" name="email" required>
+                <textarea placeholder="Sua mensagem..." type="text" id="mensagem" name="mensagem" required></textarea>
+                <button type="submit" onclick="enviar()">Enviar</button>
+            </form>
+        </main>
+    </body>
+</html>
